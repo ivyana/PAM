@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="hint_number_1">number_1</string>
+    <string name="hint_number_2">number_2</string>
+    <string name="main_button_text">Main</string>
+    <string name="add_button_text">Add Number</string>
+    <string name="perform_addition">Perform Addition</string>
+    <string name="move_to_addition_screen">Move to Next Activity</string>
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+</resources>
