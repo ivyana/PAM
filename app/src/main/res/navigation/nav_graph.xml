@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieFragment">
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.ivyana.movieapp.ui.fragments.PopularMoviesFragment"
+        android:label="Popular Now" >
+        <action
+            android:id="@+id/action_movieFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.ivyana.movieapp.ui.fragments.MovieDetailFragment"
+        android:label="Movie Details">
+        <argument
+            android:name="movie"
+            app:argType="com.ivyana.movieapp.models.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedMoviesFragment"
+        android:name="com.ivyana.movieapp.ui.fragments.SavedMoviesFragment"
+        android:label="Saved Movies"
+        tools:layout="@layout/fragment_saved_movies" >
+        <action
+            android:id="@+id/action_savedMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/latestMoviesFragment"
+        android:name="com.ivyana.movieapp.ui.fragments.TopRatedFragment"
+        android:label="Top Rated" >
+        <action
+            android:id="@+id/action_latestMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+</navigation>
