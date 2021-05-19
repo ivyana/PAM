@@ -29,7 +29,7 @@ class MovieViewModel (app: Application, private val movieRepository : MovieRepos
     private val latestMoviesMutable : MutableLiveData <Resource<MoviesModel>> = MutableLiveData()
     val latestMovies:  LiveData <Resource<MoviesModel>>
         get() = latestMoviesMutable
-   private val moviesMutable : MutableLiveData <Resource<MoviesModel>> = MutableLiveData()
+    private val moviesMutable : MutableLiveData <Resource<MoviesModel>> = MutableLiveData()
     val movies:  LiveData <Resource<MoviesModel>>
     get() = moviesMutable
   

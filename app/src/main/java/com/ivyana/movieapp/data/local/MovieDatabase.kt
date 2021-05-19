@@ -14,7 +14,7 @@ import com.ivyana.movieapp.models.Result
 
 abstract class MovieDatabase : RoomDatabase(){
 
-    abstract  fun getMovieDAO() : MoviesDao
+    abstract  fun getMovieDAO() : MovieDao
 
     companion object
     {

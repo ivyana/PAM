@@ -64,7 +64,7 @@ class SavedMoviesFragment : Fragment(R.layout.fragment_saved_movies) {
                 val article = moviesAdapter.differ.currentList[position]
                 viewModel.deleteArticle(article)
 
-                Snackbar.make(requireView(),"Movie Deleted Successfully", Snackbar.LENGTH_LONG).apply {
+                Snackbar.make(requireView(),"Movie Deleted Successfully",1500).apply {
                     setAction("Undo") {
                         viewModel.saveArticle(article)
                     }

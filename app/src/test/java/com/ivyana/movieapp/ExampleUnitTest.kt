@@ -1,4 +1,4 @@
-package com.infinity.movie_app
+package com.ivyana.movieapp
 
 import org.junit.Test
 

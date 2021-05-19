@@ -1,4 +1,4 @@
-package com.infinity.movie_app
+package com.ivyana.movieapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
